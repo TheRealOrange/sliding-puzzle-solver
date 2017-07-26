@@ -17,9 +17,15 @@ valid=True
 while valid:
   try:
     raw_puzzle=int(raw_input("Input your puzzle here!"))
-    valid=False
+    print "..."
+    if len(str(raw_puzzle))==9:
+      valid=False
+    else:
+      print " please enter the correct number of digits"
+      print "..."
   except ValueError:
     print "Input the puzzle again."
+    print "..."
 array=(str(raw_puzzle))
 array=" ".join(array)
 array=array.split()
