@@ -12,6 +12,7 @@ if the puzzle is in this state:
 +-+-+-+
 type 123456780 below.
 """
+print "..."
 valid=True
 while valid:
   try:
@@ -19,3 +20,5 @@ while valid:
     valid=False
    Except ValueError:
     print "Input the puzzle again."
+array=split(str(raw_puzzle))
+array=[int(x) for x in array]
