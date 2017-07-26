@@ -18,7 +18,9 @@ while valid:
   try:
     raw_puzzle=int(raw_input("Input your puzzle here!"))
     valid=False
-   Except ValueError:
+  except ValueError:
     print "Input the puzzle again."
-array=split(str(raw_puzzle))
+array=(str(raw_puzzle))
+array=" ".join(array)
+array=array.split()
 array=[int(x) for x in array]
