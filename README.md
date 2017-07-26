@@ -24,6 +24,7 @@ while valid:
       print " please enter the correct number of digits"
       print "..."
   except ValueError:
+    print "..."
     print "Input the puzzle again."
     print "..."
 array=(str(raw_puzzle))
